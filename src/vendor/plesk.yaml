@@ -1,4 +1,6 @@
 # Root component : plesk/server 
+# TODO documenter et implémenter lifecycle
+# TODO définir tous les links
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
