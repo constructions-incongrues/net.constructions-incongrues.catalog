@@ -4,4 +4,9 @@ metadata:
   name: all
 spec:
   targets:
-    - src
+    - src/domain/dx.yaml
+    - src/domain/music.yaml
+    - src/organization/constructions-incongrues.yaml
+    - src/organization/pastis-hosting.yaml
+    - src/vendor/github.yaml
+    - src/vendor/plesk.yaml
