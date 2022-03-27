@@ -5,8 +5,9 @@ metadata:
   name: github.com
   namespace: github
 spec:
-  type: website
   lifecycle: managed
+  owner: default/constructions-incongrues-net
+  type: website
 
 ---
 # Repositories
@@ -16,8 +17,8 @@ metadata:
   name: repositories
   namespace: github
 spec:
-  type: service
   lifecycle: managed
+  owner: default/constructions-incongrues-net
   partOf:
     - github/github.com
-  owner: default/constructions-incongrues-net
+  type: service
