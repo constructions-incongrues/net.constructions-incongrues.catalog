@@ -21,7 +21,8 @@ spec:
     - component:github/repositories
   lifecycle: managed
   owner: default/constructions-incongrues-net
-  partOf: plesk/server
+  partOf: 
+    - component:plesk/server
   type: service
 
 ---
@@ -34,7 +35,8 @@ metadata:
 spec:
   lifecycle: managed
   owner: default/constructions-incongrues-net
-  partOf: plesk/server
+  partOf: 
+    - component:plesk/server
   type: service
 
 ---
@@ -47,5 +49,6 @@ metadata:
 spec:
   lifecycle: managed
   owner: default/constructions-incongrues-net
-  partOf: plesk/server
+  partOf: 
+    - component:plesk/server
   type: service
