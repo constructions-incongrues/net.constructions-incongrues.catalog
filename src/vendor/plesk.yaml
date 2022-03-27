@@ -6,6 +6,7 @@ metadata:
   namespace: plesk
 spec:
   lifecycle: managed
+  owner: default/constructions-incongrues-net
   type: website
 
 ---
@@ -19,8 +20,8 @@ spec:
   dependsOn:
     - component:github/repositories
   lifecycle: managed
-  partOf:
-    - plesk/server
+  owner: default/constructions-incongrues-net
+  partOf: plesk/server
   type: service
 
 ---
@@ -32,8 +33,8 @@ metadata:
   namespace: plesk
 spec:
   lifecycle: managed
-  partOf:
-    - plesk/server
+  owner: default/constructions-incongrues-net
+  partOf: plesk/server
   type: service
 
 ---
@@ -46,6 +47,5 @@ metadata:
 spec:
   lifecycle: managed
   owner: default/constructions-incongrues-net
-  partOf:
-    - plesk/server
+  partOf: plesk/server
   type: service
