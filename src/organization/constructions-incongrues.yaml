@@ -11,3 +11,4 @@ spec:
     displayName: Constructions Incongrues
     email: contact@constructions-incongrues.net
   children: [constructions-incongrues-net, ouiedire-net]
+  owner: default/constructions-incongrues-net

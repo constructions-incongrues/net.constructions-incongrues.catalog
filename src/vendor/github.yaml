@@ -20,3 +20,4 @@ spec:
   lifecycle: managed
   partOf:
     - github/github.com
+  owner: default/constructions-incongrues-net

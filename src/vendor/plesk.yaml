@@ -5,8 +5,8 @@ metadata:
   name: server
   namespace: plesk
 spec:
-  type: website
   lifecycle: managed
+  type: website
 
 ---
 # Git
@@ -16,12 +16,12 @@ metadata:
   name: git
   namespace: plesk
 spec:
-  type: service
-  lifecycle: managed
-  partOf: 
-    - plesk/server
   dependsOn:
     - component:github/repositories
+  lifecycle: managed
+  partOf:
+    - plesk/server
+  type: service
 
 ---
 # Storage
@@ -31,10 +31,10 @@ metadata:
   name: storage
   namespace: plesk
 spec:
-  type: service
   lifecycle: managed
-  partOf: 
+  partOf:
     - plesk/server
+  type: service
 
 ---
 # Databases
@@ -44,8 +44,8 @@ metadata:
   name: databases
   namespace: plesk
 spec:
-  type: service
   lifecycle: managed
-  partOf: 
+  owner: default/constructions-incongrues-net
+  partOf:
     - plesk/server
-
+  type: service
