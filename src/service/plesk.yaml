@@ -1,0 +1,51 @@
+# Root component : plesk/server 
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: server
+  namespace: plesk
+spec:
+  type: website
+  lifecycle: managed
+
+---
+# Git
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: git
+  namespace: plesk
+spec:
+  type: service
+  lifecycle: managed
+  partOf: 
+    - plesk/server
+  dependsOn:
+    - component:github/repositories
+
+---
+# Storage
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: storage
+  namespace: plesk
+spec:
+  type: service
+  lifecycle: managed
+  partOf: 
+    - plesk/server
+
+---
+# Databases
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: databases
+  namespace: plesk
+spec:
+  type: service
+  lifecycle: managed
+  partOf: 
+    - plesk/server
+

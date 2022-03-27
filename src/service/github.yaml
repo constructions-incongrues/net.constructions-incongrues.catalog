@@ -1,0 +1,22 @@
+# Root component : github/github.com 
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: github.com
+  namespace: github
+spec:
+  type: website
+  lifecycle: managed
+
+---
+# Repositories
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: repositories
+  namespace: github
+spec:
+  type: service
+  lifecycle: managed
+  partOf:
+    - github/github.com
