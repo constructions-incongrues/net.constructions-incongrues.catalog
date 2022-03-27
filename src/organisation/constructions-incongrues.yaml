@@ -1,12 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: ci
-  description: Constructions Incongrues
+  name: constructions-incongrues
   links:
-    - url: https://www.constructions-incongrues.net
+    - url: https://www.constructions-incongrues
       title: constructions-incongrues.net
-      icon: public
 spec:
   type: organization
   profile:

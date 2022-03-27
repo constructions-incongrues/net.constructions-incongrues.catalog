@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: pastis-hosting
+  description: Pastis Hosting
+  links:
+    - url: https://www.pastis-hosting.net
+      title: pastis-hosting.net
+spec:
+  type: organization
+  profile:
+    displayName: Pastis Hosting
+    email: contact@pastis-hosting.net
+  children: [pastis-hosting-net]
