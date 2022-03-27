@@ -1,14 +1,14 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: constructions-incongrues
   links:
-    - url: https://www.constructions-incongrues
-      title: constructions-incongrues.net
+    - title: constructions-incongrues.net
+      url: https://www.constructions-incongrues
+  name: constructions-incongrues
 spec:
-  type: organization
+  members: []
+  owner: default/constructions-incongrues-net
   profile:
     displayName: Constructions Incongrues
     email: contact@constructions-incongrues.net
-  children: [constructions-incongrues-net, ouiedire-net]
-  owner: default/constructions-incongrues-net
+  type: organization
